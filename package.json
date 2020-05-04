@@ -1,6 +1,13 @@
 {
   "name": "NodeJs-Tutorial",
   "version": "0.0.1",
+  "main": "test.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "mocha 'tests/**/*.js'"
+  },
   "dependencies": {
     "crypto": "0.0.3",
     "express": "^4.13.3",
@@ -8,5 +15,9 @@
     "request": "2.74.0",
     "socket.io": "^1.3.7",
     "url": "^0.11.0"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^7.1.2"
   }
 }
